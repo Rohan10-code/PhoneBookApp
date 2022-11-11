@@ -1,0 +1,20 @@
+
+.main-container{
+    margin:5% 0 5% 0;
+    padding: 5% 0 5% 0;
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    padding: 50px 50px 50px 50px;
+}
+
+.center-text{
+    text-align: center;
+    font-weight: 700;
+    font-size:xx-large;
+    margin-bottom: 20px;
+}
+
+.phone-book-icon{
+    width:80px;
+    margin-right: 10px;
+}

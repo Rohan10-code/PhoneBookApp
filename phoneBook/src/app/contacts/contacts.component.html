@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col contact-heading">Contacts</div>
+  <div class="col heading-button"><button class="btn btn-primary" routerLink="/Add-Update/0"> + Add Contact </button></div>
+</div>
+<div class="row">
+  <div class="col">
+    <input type="text" name="" id="" placeholder="Search for contact by last name..." class="search" [(ngModel)]="contactSearch">
+  </div>
+</div>
+<div class="row">
+    <div *ngIf="!contactData">
+       <div class="loader"></div>
+    </div>
+    <div *ngFor="let contact of contactData"  class="box-div">
+      <div *ngIf="contactSearch==='' || contact.lastName.toLowerCase().includes(contactSearch.toLowerCase()) " class="contact-details">
+        <div routerLink="/Add-Update/{{contact.id}}" style="width:100%;">
+          <div class="contact-name">{{contact.firstName}} {{contact.lastName}}</div>
+          <div class="contact-number"><img class="contact-icon" src="https://img.icons8.com/fluency-systems-regular/48/null/phone.png"/>{{contact.phoneNumber}}</div>
+        </div>
+        <div><img (click)="deleteContact(contact.id)" class="delete-icon" src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/null/external-delete-multimedia-kiranshastry-solid-kiranshastry.png"/></div>
+      </div>
+    </div>
+
+</div>
+

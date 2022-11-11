@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col contact-heading">{{heading}}</div>
+    <div class="col heading-button"><button class="btn btn-primary" routerLink="/"> Back </button></div>
+</div>
+<div class="row">
+    <div class="col">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <label for="firstName"><span style="color: red;">*</span>First Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="First Name" formControlName="fname">
+            </div>
+            <div class="form-group mt-2">
+              <label for="LastName"><span style="color: red;">*</span>Last Name</label>
+              <input type="text" class="form-control" id="LastName" placeholder="Last Name" formControlName="lname">
+            </div>
+            <div class="form-group mt-2">
+                <label for="LastName"><span style="color: red;">*</span>Contact Number</label>
+                <input type="tel" class="form-control" id="LastName" maxlength="12" formControlName="tel" placeholder="000-000-0000">
+            </div>
+            <button type="submit"class="btn btn-primary mt-3" [disabled]="!contactForm.valid">{{heading}}</button>
+          </form>
+    </div>
+</div>

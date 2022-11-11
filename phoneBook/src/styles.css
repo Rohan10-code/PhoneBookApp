@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.row{
+    margin: 10px 0 10px 0;
+}
+.col{
+    padding: 0 0 0 0;
+}
+
+.contact-heading{
+    font-weight: 700;
+    font-size: larger;
+}
+
+.heading-button{
+    text-align: end;
+}
