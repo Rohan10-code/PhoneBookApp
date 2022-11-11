@@ -16,6 +16,7 @@
             <div class="form-group mt-2">
                 <label for="LastName"><span style="color: red;">*</span>Contact Number</label>
                 <input type="tel" class="form-control" id="LastName" maxlength="12" formControlName="tel" placeholder="000-000-0000">
+                <small>Follow patten 000-000-0000</small>
             </div>
             <button type="submit"class="btn btn-primary mt-3" [disabled]="!contactForm.valid">{{heading}}</button>
           </form>
