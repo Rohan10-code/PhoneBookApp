@@ -38,16 +38,4 @@ export class ContactsComponent implements OnInit {
     });
   }
 
-  // onChangeSearch(){
-  //   this.contactSearch
-
-  //   this.contactData=this.contactCopy
-
-  //   this.contactData=this.contactData.filter( (a:any) => a.id != id );
-    
-
-
-  // }
-
-
 }
